@@ -81,9 +81,57 @@ console.log("EX 30")
 
         console.log("EX 34")
         const changeTheHeading = function(){
-         let heading = document.getElementsByTagName(h1).inn
-         heading.innerHTML = "thhttgbb"
-
+            document.querySelector("h1").innerHTML = "The new HTML Document"
         }
+       
+        console.log("EX 35")
+
+
+        
+
+
+const addRowToMyTable = function() {
+  let table = document.getElementById("myTable");
+  let row = table.insertRow(4)
+  let cell1 = row.insertCell(0)
+  let cell2 = row.insertCell(1)
+  let cell3 = row.insertCell(2)
+  let cell4 = row.insertCell(3)
+  cell1.innerHTML = "priyanka"
+  cell2.innerHTML = "bagali"
+  cell3.innerHTML = "25"
+  cell4.innerHTML = "sweden"
+}
+
+console.log("EX 38")
+const changeLinkBackground = function(){
+    let elms = document.querySelectorAll("[id='bg_red']");
+
+
+    document.getElementById("bg_red").style.background = "red"
+}
+console.log("Ex 39")
+
+window.onload = function(){
+    console.log("page loaded")
+    alert("Page loaded")
+}
+
+
+console.log("Ex 39")
+
+function addNewListItem(){
+
+const secondList = document.getElementById('secondList')
+const newElement = document.createElement('li')
+
+newElement.innerText='DBMS'
+secondList.appendChild(newElement)
+}
+console.log("Ex 40")
+const removeElement = function(){
+    let element = document.querySelector("secondList")
+    element.remove()
+}
 
 
